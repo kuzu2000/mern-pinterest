@@ -7,9 +7,10 @@ const PostRoute = require('./routers/post')
 const UserRoute = require('./routers/user')
 const FavouriteRoute = require('./routers/favourite')
 app.use(express.json());
-app.use(cors({
-  origin: '*'}));
+app.use(cors());
 dotenv.config();
+
+mongoose.set('strictQuery', false);
 
 mongoose
   .connect('mongodb+srv://pinterest:pinterest@cluster0.ymxzq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
