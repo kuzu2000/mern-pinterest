@@ -12,7 +12,7 @@ app.use(cors({
 dotenv.config();
 
 mongoose
-  .connect(process.env.MONGO_URL, {
+  .connect('mongodb+srv://pinterest:pinterest@cluster0.ymxzq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
