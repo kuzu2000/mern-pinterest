@@ -7,7 +7,9 @@ const PostRoute = require('./routers/post')
 const UserRoute = require('./routers/user')
 const FavouriteRoute = require('./routers/favourite')
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: "https://mern-pinterest.vercel.app"
+}));
 dotenv.config();
 
 mongoose.set('strictQuery', false);
