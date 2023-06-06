@@ -39,6 +39,7 @@ const NavBar = () => {
     dispatch(logout());
     dispatch(removeAllFavourites());
     setOpenPopUp(false);
+    navigate('/login')
   };
 
   const PopUp = () => {
