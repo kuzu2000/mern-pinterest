@@ -652,6 +652,7 @@ input[type='search'].dark::-webkit-search-cancel-button {
   cursor: pointer;
   transition: .3s;
   color: var(--clr-font);
+  z-index: 99;
 }
 
 .singlePost {
@@ -1209,6 +1210,13 @@ input[type='search'].dark::-webkit-search-cancel-button {
 .or {
   font-weight: 700;
   color: var(--clr-font);
+}
+
+@media screen and (max-width: 420px) {
+  .loginForm {
+    text-align: center;
+    width: 340px;
+  }
 }
 
 .socialMedia {
